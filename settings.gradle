@@ -1,0 +1,13 @@
+import org.gradle.api.initialization.resolve.RepositoriesMode
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+    }
+}
+rootProject.name = "DocsTextInputLibrary"
+include ':app'
+include ':docs-txtinputs-library'

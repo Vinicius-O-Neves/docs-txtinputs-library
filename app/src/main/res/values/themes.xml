@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.DocsTextInputLibrary" parent="Theme.MaterialComponents.DayNight">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="CustomComponents.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.CustomComponents.TextInputLayout</item>
+        <item name="errorIconDrawable">@null</item>
+    </style>
+
+    <style name="ThemeOverlay.CustomComponents.TextInputLayout" parent="">
+        <item name="android:background">@null</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="colorError">#995254</item>
+        <item name="errorIconDrawable">@null</item>
+        <!-- Selector color -->
+        <item name="colorControlActivated">?colorPrimary</item>
+        <item name="colorOnSurface">?colorPrimary</item>
+        <item name="editTextStyle">@style/Widget.MaterialComponents.TextInputEditText.FilledBox</item>
+    </style>
+
+</resources>
