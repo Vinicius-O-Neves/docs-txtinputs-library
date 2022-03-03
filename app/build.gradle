@@ -47,4 +47,6 @@ dependencies {
     // Lifecycle components
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0-native-mt'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0-native-mt'
+
+    implementation project(":docs-txtinputs-library")
 }
