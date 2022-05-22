@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DocsTextInputLibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/DocsTextInputLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DocsTextInputLibrary.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DocsTextInputLibrary.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DocsTextInputLibrary.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DocsTextInputLibrary.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DocsTextInputLibrary.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DocsTextInputLibrary.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DocsTextInputLibrary.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DocsTextInputLibrary.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/docs-txtinputs-library/DocsTextInputLibrary.docs-txtinputs-library.iml" filepath="$PROJECT_DIR$/.idea/modules/docs-txtinputs-library/DocsTextInputLibrary.docs-txtinputs-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/docs-txtinputs-library/DocsTextInputLibrary.docs-txtinputs-library.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/docs-txtinputs-library/DocsTextInputLibrary.docs-txtinputs-library.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/docs-txtinputs-library/DocsTextInputLibrary.docs-txtinputs-library.main.iml" filepath="$PROJECT_DIR$/.idea/modules/docs-txtinputs-library/DocsTextInputLibrary.docs-txtinputs-library.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/docs-txtinputs-library/DocsTextInputLibrary.docs-txtinputs-library.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/docs-txtinputs-library/DocsTextInputLibrary.docs-txtinputs-library.unitTest.iml" />
+    </modules>
+  </component>
+</project>

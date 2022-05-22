@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DocsTextInput</string>
+    <string name="cpf_input_layout_hint">CPF</string>
+    <string name="default_error_text">Preencha corretamente</string>
+    <string name="helper_text">Helper Text</string>
+    <string name="default_hint">Default Hint</string>
+    <string name="pis_input_layout_hint">PIS</string>
+</resources>
