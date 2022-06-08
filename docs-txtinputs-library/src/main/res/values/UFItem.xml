@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="UFItem">
+        <attr name="ufCounterMinLength" format="integer" />
+        <attr name="ufHintText" format="string" />
+        <attr name="ufErrorText" format="string" />
+    </declare-styleable>
+</resources>
