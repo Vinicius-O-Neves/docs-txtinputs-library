@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PISItem">
+        <attr name="pisCounterEnable" format="boolean" />
+        <attr name="pisCounterMaxLength" format="integer" />
+        <attr name="pisCounterMinLength" format="integer" />
+        <attr name="pisHintText" format="string" />
+        <attr name="pisErrorText" format="string" />
+    </declare-styleable>
+</resources>
