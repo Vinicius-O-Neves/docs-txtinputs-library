@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomTextInput">
+        <attr name="customInputCounterEnable" format="boolean" />
+        <attr name="customInputMaxLength" format="integer" />
+        <attr name="customInputMinLength" format="integer" />
+        <attr name="customInputHintText" format="string" />
+        <attr name="customInputErrorText" format="string" />
+        <attr name="customInputDrawableStart" format="reference" />
+    </declare-styleable>
+</resources>
