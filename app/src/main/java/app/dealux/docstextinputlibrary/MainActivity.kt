@@ -2,15 +2,10 @@ package app.dealux.docstextinputlibrary
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.view.View
+import androidx.fragment.app.Fragment
 import app.dealux.docstextinputlibrary.databinding.ActivityMainBinding
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
 
-class MainActivity : AppCompatActivity(),
-    View.OnClickListener {
+class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
@@ -19,20 +14,14 @@ class MainActivity : AppCompatActivity(),
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        listener()
+        val blankFragment = BlankFragment()
+        setFragment(blankFragment, "blank_fragment")
     }
 
-    private fun listener() {
-        binding.edCpf.setOnClickListener(this)
-        binding.btn.setOnClickListener(this)
-    }
-
-    override fun onClick(view: View) {
-        when (view.id) {
-            binding.btn.id -> {
-                binding.edCpf.verifyCpf()
-                binding.edPis.verifyPis()
-            }
+    private fun setFragment(fragment: Fragment, tag: String) {
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.fragment, fragment, tag)
+            commit()
         }
     }
 }
