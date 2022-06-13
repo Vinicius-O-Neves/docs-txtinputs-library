@@ -6,7 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="click" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="pis" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
@@ -29,9 +29,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="layoutResourceFile" />
-        <option value="Kotlin Class" />
+        <option value="resourceFile" />
+        <option value="Kotlin Interface" />
         <option value="valueResourceFile" />
+        <option value="Kotlin Class" />
+        <option value="layoutResourceFile" />
       </list>
     </option>
   </component>
@@ -43,8 +45,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="android-custom-viewC:/Users/Vinic/.gradle/caches/modules-2/files-2.1/com.github.Vinicius-O-Neves/docs-txtinputs-library/1.1.2/7ea29d142b0b4bf7d08c6c3084dc8bc939853bf6/docs-txtinputs-library-1.1.2-sources.jar!/app/dealux/docs_txtinputs_library/customview/CPFItem.kt_SELECTED" value="CPFItem" />
+    <property name="android-custom-viewC:/Users/Vinic/.gradle/caches/modules-2/files-2.1/com.google.android.material/material/1.6.0/976aa22bd46c7748fade98594298bcd36b92f844/material-1.6.0-sources.jar!/com/google/android/material/textfield/TextInputLayout.java_SELECTED" value="TextInputLayout" />
+    <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/BirthdayItem.kt_SELECTED" value="BirthdayItem" />
     <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/CPFItem.kt_CPFItem_DIMENSIONS" value="1080&#10;1920" />
     <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/CPFItem.kt_SELECTED" value="CPFItem" />
+    <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/CustomInput.kt_SELECTED" value="CustomInput" />
+    <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/CustomTextInput.kt_SELECTED" value="CustomTextInput" />
+    <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/PISItem.kt_SELECTED" value="PISItem" />
+    <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/UFItem.kt_SELECTED" value="UFItem" />
+    <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/birthdaytextinput/BirthdayItem.kt_SELECTED" value="BirthdayItem" />
+    <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/cpftextinput/CPFItem.kt_SELECTED" value="CPFItem" />
+    <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/pistextinput/PISItem.kt_SELECTED" value="PISItem" />
+    <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/uftextinput/UFItem.kt_SELECTED" value="UFItem" />
     <property name="android-custom-viewC:/Users/Vinicius Neves/Desktop/DocsTextInputLibrary/app/src/main/java/app/dealux/docstextinputlibrary/customview/CPFItem.kt_SELECTED" value="CPFItem" />
     <property name="android-custom-viewC:/Users/Vinicius Neves/Desktop/DocsTextInputLibrary/app/src/main/java/app/dealux/docstextinputlibrary/customview/CustomTextInput.kt_SELECTED" value="CustomTextInputItem" />
     <property name="android-custom-viewC:/Users/Vinicius Neves/Desktop/DocsTextInputLibrary/app/src/main/java/app/dealux/docstextinputlibrary/customview/CustomTextInputItem.kt_SELECTED" value="CustomTextInputItem" />
@@ -52,13 +65,22 @@
     <property name="android-custom-viewC:/Users/Vinicius Neves/Desktop/DocsTextInputLibrary/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/CPFItem.kt_SELECTED" value="CPFItem" />
     <property name="android-custom-viewC:/Users/Vinicius Neves/Desktop/DocsTextInputLibrary/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/PISItem.kt_SELECTED" value="PISItem" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../contabilit-code-main-main/contabilit-code-main" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Vinic\OneDrive\Desktop\Codes\docs-txtinputs-library-main\docs-txtinputs-library\src\main\res\drawable" />
+      <recent name="C:\Users\Vinic\OneDrive\Desktop\Codes\docs-txtinputs-library-main\docs-txtinputs-library\src\main\res\layout" />
       <recent name="C:\Users\Vinicius Neves\Desktop\DocsTextInputLibrary\docs-txtinputs-library\src\main\res\layout" />
       <recent name="C:\Users\Vinicius Neves\Desktop\DocsTextInputLibrary\app\src\main\res\values" />
       <recent name="C:\Users\Vinicius Neves\Desktop\DocsTextInputLibrary\app\src\main\res\layout" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="app.dealux.docs_txtinputs_library.customview.uftextinput" />
+      <recent name="app.dealux.docs_txtinputs_library.customview.pistextinput" />
+      <recent name="app.dealux.docs_txtinputs_library.customview.cpftextinput" />
+      <recent name="app.dealux.docs_txtinputs_library.customview.birthdaytextinput" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.app">
