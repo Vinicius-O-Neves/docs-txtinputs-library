@@ -5,39 +5,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".MainActivity">
 
-    <app.dealux.docs_txtinputs_library.customview.CPFItem
-        android:id="@+id/ed_cpf"
+    <FrameLayout
+        android:id="@+id/fragment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        app:docCounterEnable="true"
-        app:docCounterMaxLength="14"
-        app:docHintText="CPF"
-        app:docErrorText="Insira um CPF Válido"
-        app:docCounterMinLength="15"
+        android:layout_height="match_parent"
 
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <app.dealux.docs_txtinputs_library.customview.PISItem
-        android:id="@+id/ed_pis"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        app:pisCounterEnable="true"
-
-        app:layout_constraintTop_toBottomOf="@id/ed_cpf" />
-
-    <Button
-        android:id="@+id/btn"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="2dp"
-
-        android:text="click"
-        android:textSize="26sp"
-
-        app:layout_constraintTop_toBottomOf="@id/ed_pis" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
