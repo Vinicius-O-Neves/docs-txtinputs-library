@@ -6,25 +6,20 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="CustomComponents.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
-        <item name="materialThemeOverlay">@style/ThemeOverlay.CustomComponents.TextInputLayout</item>
-        <item name="errorIconDrawable">@null</item>
-    </style>
-
     <style name="CustomComponents.TextInputLayout.OutlinedBox" parent="Widget.Material3.TextInputEditText.OutlinedBox">
-        <item name="hintTextColor">@color/white</item>
+        <item name="hintTextColor">@color/black</item>
+        <item name="colorAccent">@color/cyan</item>
+        <item name="android:textColorHighlight">@color/cyan</item>
         <item name="boxStrokeColor">@color/blue</item>
-        <item name="android:textColorHint">@color/white</item>
+        <item name="boxStrokeErrorColor">@color/red</item>
+        <item name="android:textColorHint">@color/gray</item>
     </style>
 
-    <style name="ThemeOverlay.CustomComponents.TextInputLayout" parent="">
-        <item name="android:background">@null</item>
-        <item name="android:textColorPrimary">@color/white</item>
-        <item name="colorError">#995254</item>
-        <item name="errorIconDrawable">@null</item>
-        <!-- Selector color -->
-        <item name="colorControlActivated">?colorPrimary</item>
-        <item name="colorOnSurface">?colorPrimary</item>
-        <item name="editTextStyle">@style/Widget.MaterialComponents.TextInputEditText.FilledBox</item>
+    <style name="datePickerTheme" parent="android:Theme.Material.Light.Dialog">
+        <item name="android:colorAccent">#334355</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="boxStrokeColor">@color/gray</item>
     </style>
+
 </resources>
