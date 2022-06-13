@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BlankFragment">
+
+    <app.dealux.docs_txtinputs_library.customview.cpftextinput.CPFItem
+        android:id="@+id/ed_cpf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:docCounterEnable="true"
+        app:docCounterMaxLength="14"
+        app:docCounterMinLength="14"
+        app:docErrorText="Insira um CPF Válido"
+        app:docHintText="CPF"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <app.dealux.docs_txtinputs_library.customview.pistextinput.PISItem
+        android:id="@+id/ed_pis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:pisCounterEnable="true"
+        app:pisCounterMaxLength="11"
+        app:pisCounterMinLength="11"
+        app:pisErrorText="Insira um PIS Válido"
+        app:pisHintText="PIS"
+
+        app:layout_constraintTop_toBottomOf="@id/ed_cpf"/>
+
+    <app.dealux.docs_txtinputs_library.customview.birthdaytextinput.BirthdayItem
+        android:id="@+id/btn_birth"
+        android:layout_width="380dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_background_input"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ed_pis" />
+
+    <app.dealux.docs_txtinputs_library.customview.uftextinput.UFItem
+        android:id="@+id/ed_uf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:ufCounterMinLength="10"
+        app:ufErrorText="Insira uma naturalidade válida"
+        app:ufHintText="Naturalidade (UF)"
+
+        app:layout_constraintTop_toBottomOf="@id/btn_birth"/>
+
+    <app.dealux.docs_txtinputs_library.customview.CustomTextInput
+        android:id="@+id/ed_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:customInputMinLength="3"
+        app:customInputMaxLength="30"
+        app:customInputHintText="Nome"
+        app:customInputDrawableStart="@drawable/ic_calendar"
+        app:customInputErrorText="Digite um Nome válido"
+        app:layout_constraintTop_toBottomOf="@id/ed_uf" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/blue"
+
+        android:text="click"
+        android:textSize="26sp"
+
+        app:layout_constraintTop_toBottomOf="@id/ed_name" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
