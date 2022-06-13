@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BirthdayItem">
+        <attr name="birthdayButtonStyle" format="integer" />
+        <attr name="birthdayErrorText" format="string" />
+    </declare-styleable>
+</resources>
