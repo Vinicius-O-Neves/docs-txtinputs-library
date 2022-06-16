@@ -5,8 +5,13 @@ import android.util.AttributeSet
 import android.util.Log
 import android.view.LayoutInflater
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.content.ContextCompat
 import app.dealux.docs_txtinputs_library.R
 import app.dealux.docs_txtinputs_library.databinding.PisTextinputLayoutBinding
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.cancel
 import kotlin.properties.Delegates
 
 class PISItem @JvmOverloads constructor(
@@ -17,6 +22,8 @@ class PISItem @JvmOverloads constructor(
 
     private val binding = PisTextinputLayoutBinding
         .inflate(LayoutInflater.from(context), this, true)
+    private val job = CoroutineScope(Job() + Dispatchers.Main)
+
     var defaultMinLength = 11
     var defaultMaxLength = 11
     var isValid: Boolean = false
@@ -64,6 +71,21 @@ class PISItem @JvmOverloads constructor(
             isValid = false
 
             attributes.recycle()
+        }
+    }
+
+    private fun listener() {
+        binding.pisInputLayout.setOnFocusChangeListener { _, hasFocus ->
+            if (hasFocus) {
+                job.run {
+                    binding.pisInputLayout.boxStrokeColor = ContextCompat.getColor(
+                        context,
+                        R.color.blue
+                    )
+                }
+            } else {
+                job.cancel()
+            }
         }
     }
 
