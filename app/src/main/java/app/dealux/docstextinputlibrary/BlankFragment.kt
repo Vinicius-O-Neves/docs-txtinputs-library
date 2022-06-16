@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import app.dealux.docs_txtinputs_library.utils.DatePickerFragment
 import app.dealux.docstextinputlibrary.databinding.FragmentBlankBinding
 
 class BlankFragment : Fragment(),
@@ -45,6 +44,7 @@ class BlankFragment : Fragment(),
         binding.btnBirth.verifyBirthDay()
         binding.edUf.verifyUF()
         binding.edName.verify()
+        binding.edNationality.verifyNationalities()
 
         if (!binding.edCpf.isValid) {
             Toast.makeText(requireContext(), "Digite um CPF Válido", Toast.LENGTH_SHORT).show()
@@ -56,6 +56,8 @@ class BlankFragment : Fragment(),
             Toast.makeText(requireContext(), "Digite uma naturalidade Válida", Toast.LENGTH_SHORT).show()
         } else if (!binding.edName.isValid) {
             Toast.makeText(requireContext(), "Digite um nome Válido", Toast.LENGTH_SHORT).show()
+        } else if (!binding.edNationality.isValid) {
+            Toast.makeText(requireContext(), "Digite uma nacionalidade Válida", Toast.LENGTH_SHORT).show()
         } else {
             Toast.makeText(requireContext(), "Opa são validos", Toast.LENGTH_SHORT).show()
         }
