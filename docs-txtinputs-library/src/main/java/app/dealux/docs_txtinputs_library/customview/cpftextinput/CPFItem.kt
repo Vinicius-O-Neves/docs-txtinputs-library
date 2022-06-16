@@ -77,12 +77,14 @@ class CPFItem @JvmOverloads constructor(
     private fun listener() {
         binding.docInputEdittext.setOnFocusChangeListener { _, hasFocus ->
             if (hasFocus) {
-                jobMask.launch {
-                    binding.docInputLayout.boxStrokeColor = ContextCompat.getColor(
-                        context,
-                        R.color.blue
-                    )
-                    maskCPF()
+                jobMask.run {
+                    jobMask.launch {
+                        binding.docInputLayout.boxStrokeColor = ContextCompat.getColor(
+                            context,
+                            R.color.blue
+                        )
+                        maskCPF()
+                    }
                 }
             } else {
                 jobMask.cancel()
