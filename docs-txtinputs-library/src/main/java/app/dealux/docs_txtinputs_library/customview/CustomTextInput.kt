@@ -24,6 +24,7 @@ class CustomTextInput @JvmOverloads constructor(
     private val binding = CustomInputLayoutBinding
         .inflate(LayoutInflater.from(context), this, true)
     private val job = CoroutineScope(Job() + Dispatchers.Main)
+
     var defaultMinLength = 3
     var defaultMaxLength = 20
     var isValid: Boolean = false
@@ -70,13 +71,16 @@ class CustomTextInput @JvmOverloads constructor(
             docCounterEnable =
                 attributes.getBoolean(R.styleable.CustomTextInput_customInputCounterEnable, false)
             docCounterMaxLength =
-                attributes.getInt(R.styleable.CustomTextInput_customInputMaxLength, defaultMaxLength)
+                attributes.getInt(R.styleable.CustomTextInput_customInputMaxLength,
+                    defaultMaxLength)
             docCounterMinLength =
-                attributes.getInt(R.styleable.CustomTextInput_customInputMinLength, defaultMinLength)
+                attributes.getInt(R.styleable.CustomTextInput_customInputMinLength,
+                    defaultMinLength)
             docHintText =
                 attributes.getString(R.styleable.CustomTextInput_customInputHintText) ?: docHintText
             docErrorText =
-                attributes.getString(R.styleable.CustomTextInput_customInputErrorText) ?: docErrorText
+                attributes.getString(R.styleable.CustomTextInput_customInputErrorText)
+                    ?: docErrorText
             isValid = false
             docStartDrawable =
                 attributes.getDrawable(R.styleable.CustomTextInput_customInputDrawableStart)
@@ -88,12 +92,14 @@ class CustomTextInput @JvmOverloads constructor(
     private fun listener() {
         binding.docInputEdittext.setOnFocusChangeListener { _, hasFocus ->
             if (hasFocus) {
-                binding.docInputLayout.boxStrokeColor = ContextCompat.getColor(
-                    context,
-                    R.color.blue
-                )
+                job.run {
+                    binding.docInputLayout.boxStrokeColor = ContextCompat.getColor(
+                        context,
+                        R.color.blue
+                    )
+                }
             } else {
-            job.cancel()
+                job.cancel()
             }
         }
     }
@@ -115,7 +121,7 @@ class CustomTextInput @JvmOverloads constructor(
             binding.docInputLayout.isErrorEnabled = false
             isValid = true
         }
-    return true
+        return true
     }
 
 }
