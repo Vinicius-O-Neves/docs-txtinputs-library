@@ -21,10 +21,7 @@ class UFItem @JvmOverloads constructor(
 
     var defaultMinLength = 5
     var isValid: Boolean = false
-
     private val ufs: Array<String> = context.resources.getStringArray(R.array.ufs_values)
-
-
     var docHintText: String by Delegates.observable(
         initialValue = context.getString(
             R.string.default_hint
@@ -32,25 +29,12 @@ class UFItem @JvmOverloads constructor(
     ) { _, old, new ->
         if (old != new) binding.ufInputEdittext.hint = new
     }
-
     var docErrorText: String = getContext().getString(R.string.default_error_text)
     var docCounterMinLength: Int = defaultMinLength
 
     init {
         setLayout(attrs)
         listener()
-    }
-
-    private fun listener() {
-        binding.ufInputEdittext.setOnFocusChangeListener { _, hasFocus ->
-            if (hasFocus) {
-                binding.docInputLayout.boxStrokeColor = ContextCompat.getColor(
-                    context,
-                    R.color.blue
-                )
-                autocomplete()
-            }
-        }
     }
 
     private fun setLayout(attrs: AttributeSet?) {
@@ -64,12 +48,23 @@ class UFItem @JvmOverloads constructor(
                 attributes.getInt(R.styleable.UFItem_ufCounterMinLength, defaultMinLength)
             docHintText = attributes.getString(R.styleable.UFItem_ufHintText)
                 ?: context.getString(R.string.default_hint)
-            val customErrorText = attributes.getString(R.styleable.UFItem_ufErrorText)
-            val defaultErrorText = context.getString(R.string.default_error_text)
-            docErrorText = customErrorText ?: defaultErrorText
+            docErrorText = attributes.getString(R.styleable.UFItem_ufErrorText)
+                ?: context.resources.getString(R.string.default_error_text)
             isValid = false
 
             attributes.recycle()
+        }
+    }
+
+    private fun listener() {
+        binding.ufInputEdittext.setOnFocusChangeListener { _, hasFocus ->
+            if (hasFocus) {
+                binding.docInputLayout.boxStrokeColor = ContextCompat.getColor(
+                    context,
+                    R.color.blue
+                )
+                autocomplete()
+            }
         }
     }
 
@@ -86,13 +81,16 @@ class UFItem @JvmOverloads constructor(
     fun verifyUF(): Boolean {
         val uf = binding.ufInputEdittext.text.toString()
 
-        if (uf == "" || uf == null || uf !in ufs) {
+        if (uf == "" ||
+            uf == null ||
+            uf !in ufs ||
+            uf.length < docCounterMinLength
+        ) {
             binding.ufInputEdittext.error = docErrorText
 
             return false
-        } else {
-            isValid = true
         }
+        isValid = true
         return true
     }
 
