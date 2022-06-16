@@ -8,6 +8,7 @@
     <string name="pis_input_layout_hint">PIS</string>
     <string name="birthday">Data de Nascimento</string>
     <string name="uf_input_layout_hint">Naturalidade (UF)</string>
+    <string name="nationality_input_layout_hint">Nacionalidade</string>
 
     <string-array name="ufs_values">
         <item>AC - ACRELÂNDIA</item>
@@ -5586,5 +5587,9 @@
         <item>TO - TUPIRATINS</item>
         <item>TO - WANDERLÂNDIA</item>
         <item>TO - XAMBIOÁ</item>
+    </string-array>
+    <string-array name="nationality">
+        <item>Brasileiro</item>
+        <item>Brasileira</item>
     </string-array>
 </resources>
