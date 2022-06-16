@@ -9,10 +9,16 @@
     <style name="CustomComponents.TextInputLayout.OutlinedBox" parent="Widget.Material3.TextInputEditText.OutlinedBox">
         <item name="hintTextColor">@color/black</item>
         <item name="colorAccent">@color/cyan</item>
+        <item name="counterTextColor">@color/black</item>
         <item name="android:textColorHighlight">@color/cyan</item>
         <item name="boxStrokeColor">@color/blue</item>
         <item name="boxStrokeErrorColor">@color/red</item>
+        <item name="errorTextColor">@color/red</item>
         <item name="android:textColorHint">@color/gray</item>
+    </style>
+
+    <style name="App.helperTextTextAppearance" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">14sp</item>
     </style>
 
     <style name="datePickerTheme" parent="android:Theme.Material.Light.Dialog">
