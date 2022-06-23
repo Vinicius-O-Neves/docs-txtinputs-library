@@ -9,10 +9,7 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
 import app.dealux.docs_txtinputs_library.R
 import app.dealux.docs_txtinputs_library.databinding.CustomInputLayoutBinding
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.Job
-import kotlinx.coroutines.cancel
+import kotlinx.coroutines.*
 import kotlin.properties.Delegates
 
 class CustomTextInput @JvmOverloads constructor(
@@ -92,7 +89,7 @@ class CustomTextInput @JvmOverloads constructor(
     private fun listener() {
         binding.docInputEdittext.setOnFocusChangeListener { _, hasFocus ->
             if (hasFocus) {
-                job.run {
+                job.launch {
                     binding.docInputLayout.boxStrokeColor = ContextCompat.getColor(
                         context,
                         R.color.blue

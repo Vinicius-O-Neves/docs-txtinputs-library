@@ -9,6 +9,7 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
 import app.dealux.docs_txtinputs_library.R
 import app.dealux.docs_txtinputs_library.databinding.CpfTextinputLayoutBinding
+import app.dealux.docs_txtinputs_library.utils.shake
 import kotlinx.coroutines.*
 
 import kotlin.properties.Delegates
@@ -77,7 +78,7 @@ class CPFItem @JvmOverloads constructor(
     private fun listener() {
         binding.docInputEdittext.setOnFocusChangeListener { _, hasFocus ->
             if (hasFocus) {
-                jobMask.run {
+                jobMask.launch {
                     jobMask.launch {
                         binding.docInputLayout.boxStrokeColor = ContextCompat.getColor(
                             context,
@@ -170,9 +171,11 @@ class CPFItem @JvmOverloads constructor(
     fun verifyCpf(): Boolean {
         val cpf = unmask(binding.docInputEdittext.text.toString())
         if (!isCpfValid(cpf)) {
-            binding.docInputLayout.isErrorEnabled = true
-            binding.docInputLayout.error = docErrorText
-
+            binding.docInputLayout.let {
+                it.isErrorEnabled = true
+                it.error = docErrorText
+                it.shake(it)
+            }
             return false
         } else {
             binding.docInputLayout.isErrorEnabled = false

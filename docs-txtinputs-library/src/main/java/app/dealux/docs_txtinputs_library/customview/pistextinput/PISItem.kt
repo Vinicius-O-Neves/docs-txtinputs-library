@@ -8,10 +8,7 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
 import app.dealux.docs_txtinputs_library.R
 import app.dealux.docs_txtinputs_library.databinding.PisTextinputLayoutBinding
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.Job
-import kotlinx.coroutines.cancel
+import kotlinx.coroutines.*
 import kotlin.properties.Delegates
 
 class PISItem @JvmOverloads constructor(
@@ -77,7 +74,7 @@ class PISItem @JvmOverloads constructor(
     private fun listener() {
         binding.pisInputLayout.setOnFocusChangeListener { _, hasFocus ->
             if (hasFocus) {
-                job.run {
+                job.launch {
                     binding.pisInputLayout.boxStrokeColor = ContextCompat.getColor(
                         context,
                         R.color.blue

@@ -1,16 +1,14 @@
 package app.dealux.docs_txtinputs_library.customview.birthdaytextinput
 
 import android.content.Context
-import android.content.res.ColorStateList
-import android.graphics.Color
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.FragmentActivity
 import app.dealux.docs_txtinputs_library.R
+import app.dealux.docs_txtinputs_library.databinding.BirthButtomLayoutBinding
 import app.dealux.docs_txtinputs_library.utils.DatePickerFragment
 import app.dealux.docs_txtinputs_library.utils.DatePickerFragment.Companion.style
-import app.dealux.docs_txtinputs_library.databinding.BirthButtomLayoutBinding
 import java.util.*
 
 class BirthdayItem @JvmOverloads constructor(
@@ -76,18 +74,16 @@ class BirthdayItem @JvmOverloads constructor(
         val birthday = binding.buttom.text.toString()
         val calendar = Calendar.getInstance()
         val year = calendar.get(Calendar.YEAR).toString()
-        val redColor = Color.parseColor("#FD1414")
-        val colorState = ColorStateList.valueOf(redColor)
 
-        if (birthday == "" || birthday == null || birthday.subSequence(6, 9) == year) {
-            binding.buttom.strokeColor = colorState
+        if (birthday == "" || birthday == null) {
             binding.buttom.error = docErrorText
-
             return false
-        } else {
-            binding.buttom.strokeColor = colorState
-            isValid = true
+        } else if (birthday.subSequence(6, 10) == year) {
+            binding.buttom.error = "O ano inserido não pode ser igual ao ano atual"
+            return false
         }
+
+        isValid = true
         return true
     }
 
