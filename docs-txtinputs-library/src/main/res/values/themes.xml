@@ -9,9 +9,11 @@
     <style name="CustomComponents.TextInputLayout.OutlinedBox" parent="Widget.Material3.TextInputEditText.OutlinedBox">
         <item name="hintTextColor">@color/black</item>
         <item name="colorAccent">@color/cyan</item>
+        <item name="colorPrimary">@color/cyan</item>
+        <item name="strokeColor">@color/gray</item>
+        <item name="boxStrokeColor">@color/gray</item>
         <item name="counterTextColor">@color/black</item>
         <item name="android:textColorHighlight">@color/cyan</item>
-        <item name="boxStrokeColor">@color/blue</item>
         <item name="boxStrokeErrorColor">@color/red</item>
         <item name="errorTextColor">@color/red</item>
         <item name="android:textColorHint">@color/gray</item>
