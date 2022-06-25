@@ -51,7 +51,5 @@ dependencies {
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0'
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.4.1'
 
-    // implementation 'com.github.Vinicius-O-Neves:docs-txtinputs-library:1.1.2'
-
-    implementation project(":docs-txtinputs-library")
+    implementation 'com.github.Vinicius-O-Neves:docs-txtinputs-library:1.0.13'
 }
