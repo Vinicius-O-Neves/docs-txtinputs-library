@@ -1,22 +1,23 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Theme.DocsTextInputLibrary" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:windowSoftInputMode">adjustResize</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
 
     <style name="CustomComponents.TextInputLayout.OutlinedBox" parent="Widget.Material3.TextInputEditText.OutlinedBox">
         <item name="hintTextColor">@color/black</item>
-        <item name="colorAccent">@color/cyan</item>
-        <item name="colorPrimary">@color/cyan</item>
-        <item name="strokeColor">@color/gray</item>
-        <item name="boxStrokeColor">@color/gray</item>
+        <item name="boxStrokeColor">@color/black</item>
         <item name="counterTextColor">@color/black</item>
-        <item name="android:textColorHighlight">@color/cyan</item>
         <item name="boxStrokeErrorColor">@color/red</item>
         <item name="errorTextColor">@color/red</item>
         <item name="android:textColorHint">@color/gray</item>
+    </style>
+
+    <style name="ThemeOverlay.AppTheme.TextInputEditText.OutlinedBox" parent="">
+        <item name="colorControlActivated">@color/cyan</item>
     </style>
 
     <style name="App.helperTextTextAppearance" parent="TextAppearance.MaterialComponents.Caption">

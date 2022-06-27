@@ -8,6 +8,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/doc_input_layout"
         style="@style/CustomComponents.TextInputLayout.OutlinedBox"
+        android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/cpf_input_layout_hint"
@@ -34,6 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:inputType="numberDecimal"
+            style="@style/CustomComponents.TextInputLayout.OutlinedBox"
 
             android:maxLines="1"
             android:textColor="@color/black"

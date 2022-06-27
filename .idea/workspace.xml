@@ -54,6 +54,7 @@
     <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/CPFItem.kt_SELECTED" value="CPFItem" />
     <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/CustomInput.kt_SELECTED" value="CustomInput" />
     <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/CustomTextInput.kt_SELECTED" value="CustomTextInput" />
+    <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/NationalityItem.kt_SELECTED" value="NationalityItem" />
     <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/PISItem.kt_SELECTED" value="PISItem" />
     <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/UFItem.kt_SELECTED" value="UFItem" />
     <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/birthdaytextinput/BirthdayItem.kt_SELECTED" value="BirthdayItem" />
@@ -80,6 +81,7 @@
       <recent name="C:\Users\Vinicius Neves\Desktop\DocsTextInputLibrary\app\src\main\res\layout" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="app.dealux.docs_txtinputs_library.customview" />
       <recent name="app.dealux.docs_txtinputs_library.customview.uftextinput" />
       <recent name="app.dealux.docs_txtinputs_library.customview.pistextinput" />
       <recent name="app.dealux.docs_txtinputs_library.customview.cpftextinput" />

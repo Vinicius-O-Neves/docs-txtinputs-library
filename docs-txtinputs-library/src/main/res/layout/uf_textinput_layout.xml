@@ -19,6 +19,7 @@
         app:boxStrokeWidth="2dp"
         app:helperTextTextAppearance="@style/App.helperTextTextAppearance"
         app:hintEnabled="true"
+        android:hint="@string/uf_input_layout_hint"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,7 +34,6 @@
             android:completionThreshold="1"
             android:drawableStart="@drawable/custom_child_icon"
             android:drawablePadding="12dp"
-            android:hint="@string/uf_input_layout_hint"
             android:maxLines="1"
             android:textColor="@color/black"
             android:textColorHint="@color/gray"
@@ -41,6 +41,5 @@
             android:textStyle="bold" />
 
     </com.google.android.material.textfield.TextInputLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

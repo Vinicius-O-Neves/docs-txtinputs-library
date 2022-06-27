@@ -33,6 +33,7 @@
             android:id="@+id/pis_input_edittext"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:inputType="numberDecimal"
 
             android:maxLines="1"
             android:textColor="@color/black"
