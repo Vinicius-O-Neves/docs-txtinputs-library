@@ -29,12 +29,12 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="resourceFile" />
         <option value="Kotlin Interface" />
-        <option value="valueResourceFile" />
+        <option value="Kotlin File" />
+        <option value="resourceFile" />
         <option value="layoutResourceFile" />
         <option value="Kotlin Class" />
-        <option value="Kotlin File" />
+        <option value="valueResourceFile" />
       </list>
     </option>
   </component>
@@ -50,12 +50,16 @@
     <property name="android-custom-viewC:/Users/Vinic/.gradle/caches/modules-2/files-2.1/com.github.Vinicius-O-Neves/docs-txtinputs-library/1.1.2/7ea29d142b0b4bf7d08c6c3084dc8bc939853bf6/docs-txtinputs-library-1.1.2-sources.jar!/app/dealux/docs_txtinputs_library/customview/CPFItem.kt_SELECTED" value="CPFItem" />
     <property name="android-custom-viewC:/Users/Vinic/.gradle/caches/modules-2/files-2.1/com.google.android.material/material/1.6.0/976aa22bd46c7748fade98594298bcd36b92f844/material-1.6.0-sources.jar!/com/google/android/material/textfield/TextInputLayout.java_SELECTED" value="TextInputLayout" />
     <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/BirthdayItem.kt_SELECTED" value="BirthdayItem" />
+    <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/CNPJItem.kt_SELECTED" value="CNPJItem" />
     <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/CPFItem.kt_CPFItem_DIMENSIONS" value="1080&#10;1920" />
     <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/CPFItem.kt_SELECTED" value="CPFItem" />
     <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/CustomInput.kt_SELECTED" value="CustomInput" />
+    <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/CustomTextInput.kt_CustomTextInput_DIMENSIONS" value="1080&#10;1920" />
     <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/CustomTextInput.kt_SELECTED" value="CustomTextInput" />
     <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/NationalityItem.kt_SELECTED" value="NationalityItem" />
     <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/PISItem.kt_SELECTED" value="PISItem" />
+    <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/RelationshipItem.kt_SELECTED" value="RelationshipItem" />
+    <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/SchoolingItem.kt_SELECTED" value="SchoolingItem" />
     <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/UFItem.kt_SELECTED" value="UFItem" />
     <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/birthdaytextinput/BirthdayItem.kt_SELECTED" value="BirthdayItem" />
     <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/cpftextinput/CPFItem.kt_SELECTED" value="CPFItem" />
@@ -69,10 +73,13 @@
     <property name="android-custom-viewC:/Users/Vinicius Neves/Desktop/DocsTextInputLibrary/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/CPFItem.kt_SELECTED" value="CPFItem" />
     <property name="android-custom-viewC:/Users/Vinicius Neves/Desktop/DocsTextInputLibrary/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/PISItem.kt_SELECTED" value="PISItem" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../contabilit" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Vinic\OneDrive\Desktop\Codes\docs-txtinputs-library-main\docs-txtinputs-library\src\main\res\drawable" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Vinic\OneDrive\Desktop\Codes\docs-txtinputs-library-main\docs-txtinputs-library\src\main\res\drawable" />
       <recent name="C:\Users\Vinic\OneDrive\Desktop\Codes\docs-txtinputs-library-main\docs-txtinputs-library\src\main\res\layout" />

@@ -8,6 +8,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/doc_input_layout"
         style="@style/CustomComponents.TextInputLayout.OutlinedBox"
+        android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:boxBackgroundColor="@color/white"

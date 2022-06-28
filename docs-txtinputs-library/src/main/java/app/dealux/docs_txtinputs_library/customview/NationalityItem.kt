@@ -8,6 +8,7 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
 import app.dealux.docs_txtinputs_library.R
 import app.dealux.docs_txtinputs_library.databinding.NationalityInputLayoutBinding
+import app.dealux.view_animations_library.shake
 import kotlin.properties.Delegates
 
 class NationalityItem @JvmOverloads constructor(
@@ -81,7 +82,7 @@ class NationalityItem @JvmOverloads constructor(
         binding.nationalityInputEdittext.setAdapter(arrayAdapterNationalities)
     }
 
-    fun verifyNationalities(): Boolean {
+    fun verify(): Boolean {
         val nationality = binding.nationalityInputEdittext.text.toString()
 
         if (nationality == "" ||
@@ -89,11 +90,14 @@ class NationalityItem @JvmOverloads constructor(
             nationality !in nationalities ||
             nationality.length < docCounterMinLength
         ) {
-            binding.docInputLayout.isErrorEnabled = true
-            binding.docInputLayout.error = docErrorText
-
+            binding.docInputLayout.also {
+                it.isErrorEnabled = true
+                it.error = docErrorText
+                it.shake(it)
+            }
             return false
         }
+        binding.docInputLayout.isErrorEnabled = false
         isValid = true
         return true
     }

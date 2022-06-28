@@ -8,6 +8,7 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
 import app.dealux.docs_txtinputs_library.R
 import app.dealux.docs_txtinputs_library.databinding.PisTextinputLayoutBinding
+import app.dealux.view_animations_library.shake
 import kotlinx.coroutines.*
 import kotlin.properties.Delegates
 
@@ -87,8 +88,12 @@ class PISItem @JvmOverloads constructor(
                         context,
                         R.color.blue
                     )
+                    binding.pisInputLayout.startIconDrawable!!
+                        .setTint(ContextCompat.getColor(context, R.color.blue))
                 }
             } else {
+                binding.pisInputLayout.startIconDrawable!!
+                    .setTint(ContextCompat.getColor(context, R.color.black))
                 job.cancel()
             }
         }
@@ -141,12 +146,14 @@ class PISItem @JvmOverloads constructor(
         return false
     }
 
-    fun verifyPis(): Boolean {
+    fun verify(): Boolean {
         val pis = unmask(binding.pisInputEdittext.text.toString())
         if (!isPisValid(pis)) {
-            binding.pisInputLayout.isErrorEnabled = true
-            binding.pisInputLayout.error = docErrorText
-
+            binding.pisInputLayout.also {
+                it.isErrorEnabled = true
+                it.error = docErrorText
+                it.shake(it)
+            }
             return false
         } else {
             binding.pisInputLayout.isErrorEnabled = false

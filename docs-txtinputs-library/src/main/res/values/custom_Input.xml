@@ -7,5 +7,6 @@
         <attr name="customInputHintText" format="string" />
         <attr name="customInputErrorText" format="string" />
         <attr name="customInputDrawableStart" format="reference" />
+        <attr name="customInputMask" format="string" />
     </declare-styleable>
 </resources>

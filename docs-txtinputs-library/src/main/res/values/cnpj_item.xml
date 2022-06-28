@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CNPJItem">
+        <attr name="cnpjCounterEnable" format="boolean" />
+        <attr name="cnpjCounterMaxLength" format="integer" />
+        <attr name="cnpjCounterMinLength" format="integer" />
+        <attr name="cnpjHintText" format="string" />
+        <attr name="cnpjErrorText" format="string" />
+    </declare-styleable>
+</resources>

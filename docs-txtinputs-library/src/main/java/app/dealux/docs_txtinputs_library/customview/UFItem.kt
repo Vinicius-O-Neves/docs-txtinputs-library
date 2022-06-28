@@ -20,16 +20,21 @@ class UFItem @JvmOverloads constructor(
         .inflate(LayoutInflater.from(context), this, true)
 
     private var defaultMinLength = 5
+
     var isValid: Boolean = false
+
     private val ufs: Array<String> = context.resources.getStringArray(R.array.ufs_values)
+
     private var docHintText: String by Delegates.observable(
         initialValue = context.getString(
             R.string.default_hint
         )
     ) { _, old, new ->
-        if (old != new) binding.ufInputEdittext.hint = new
+        if (old != new) binding.docInputLayout.hint = new
     }
+
     var docErrorText: String = getContext().getString(R.string.default_error_text)
+
     private var docCounterMinLength: Int = defaultMinLength
 
     init {
@@ -63,7 +68,6 @@ class UFItem @JvmOverloads constructor(
                     context,
                     R.color.blue
                 )
-                binding.ufInputEdittext.hint = ""
                 autocomplete()
             }
         }
@@ -79,7 +83,7 @@ class UFItem @JvmOverloads constructor(
         binding.ufInputEdittext.setAdapter(arrayAdapterUfs)
     }
 
-    fun verifyUF(): Boolean {
+    fun verify(): Boolean {
         val uf = binding.ufInputEdittext.text.toString()
 
         if (uf == "" ||

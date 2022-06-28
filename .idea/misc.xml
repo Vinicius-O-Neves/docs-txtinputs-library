@@ -9,19 +9,24 @@
         <entry key="..\:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/res/drawable/custom_background_input.xml" value="0.103" />
         <entry key="..\:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/res/drawable/custom_calendar_icon.xml" value="0.103" />
         <entry key="..\:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/res/drawable/custom_child_icon.xml" value="0.1095" />
+        <entry key="..\:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/res/drawable/custom_family_icon.xml" value="0.114" />
         <entry key="..\:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/res/drawable/custom_world_icon.xml" value="0.1095" />
         <entry key="..\:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/res/drawable/ic_assignment_ind.xml" value="0.103" />
         <entry key="..\:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/res/drawable/ic_assignment_ind_focused.xml" value="0.103" />
+        <entry key="..\:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/res/drawable/ic_business.xml" value="0.114" />
         <entry key="..\:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/res/drawable/ic_calendar.xml" value="0.103" />
         <entry key="..\:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/res/drawable/ic_calendar_focused.xml" value="0.103" />
         <entry key="..\:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/res/drawable/ic_child.xml" value="0.1095" />
         <entry key="..\:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/res/drawable/ic_child_focused.xml" value="0.1095" />
+        <entry key="..\:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/res/drawable/ic_family_focused.xml" value="0.114" />
         <entry key="..\:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/res/drawable/ic_person.xml" value="0.1" />
+        <entry key="..\:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/res/drawable/ic_school.xml" value="0.114" />
         <entry key="..\:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/res/drawable/ic_world.xml" value="0.1095" />
         <entry key="..\:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/res/drawable/ic_world_focused.xml" value="0.1095" />
         <entry key="..\:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/res/drawable/shape_background.xml" value="0.1095" />
         <entry key="..\:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/res/drawable/txt_input_layout_stroke_color.xml" value="0.111" />
         <entry key="..\:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/res/layout/birth_buttom_layout.xml" value="0.2392807745504841" />
+        <entry key="..\:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/res/layout/cnpj_textinput_layout.xml" value="0.1686746987951807" />
         <entry key="..\:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/res/layout/cpf_textinput_layout.xml" value="0.10866261398176291" />
         <entry key="..\:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/res/layout/custom_calendar_icon.xml" value="0.2234375" />
         <entry key="..\:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/res/layout/custom_input_layout.xml" value="0.1" />
@@ -29,6 +34,8 @@
         <entry key="..\:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/res/layout/layout_item_autocomplete.xml" value="0.2234375" />
         <entry key="..\:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/res/layout/nationality_input_layout.xml" value="0.2234375" />
         <entry key="..\:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/res/layout/pis_textinput_layout.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/res/layout/relationship_textinput_layout.xml" value="0.18247863247863247" />
+        <entry key="..\:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/res/layout/schooling_textinput_layout.xml" value="0.22239583333333332" />
         <entry key="..\:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/res/layout/uf_textinput_layout.xml" value="0.22239583333333332" />
         <entry key="..\:/Users/Vinicius Neves/Desktop/DocsTextInputLibrary/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/Vinicius Neves/Desktop/DocsTextInputLibrary/app/src/main/res/layout/cpf_textinput_layout.xml" value="0.14" />

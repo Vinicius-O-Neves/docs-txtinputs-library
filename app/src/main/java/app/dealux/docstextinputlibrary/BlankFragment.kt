@@ -39,12 +39,14 @@ class BlankFragment : Fragment(),
     }
 
     private fun verify() {
-        binding.edCpf.verifyCpf()
-        binding.edPis.verifyPis()
-        binding.btnBirth.verifyBirthDay()
-        binding.edUf.verifyUF()
+        binding.edCpf.verify()
+        binding.edPis.verify()
+        binding.btnBirth.verify()
+        binding.edUf.verify()
         binding.edName.verify()
-        binding.edNationality.verifyNationalities()
+        binding.edNationality.verify()
+        binding.edRelation.verify()
+        binding.edSchooling.verify()
 
         if (!binding.edCpf.isValid) {
             Toast.makeText(requireContext(), "Digite um CPF Válido", Toast.LENGTH_SHORT).show()

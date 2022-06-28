@@ -7,6 +7,8 @@
     <string name="default_hint">Default Hint</string>
     <string name="pis_input_layout_hint">PIS</string>
     <string name="birthday">Data de Nascimento</string>
+    <string name="relationship">Estado Civil</string>
+    <string name="schooling">Escolaridade</string>
     <string name="uf_input_layout_hint">Naturalidade (UF)</string>
     <string name="nationality_input_layout_hint">Nacionalidade</string>
 
@@ -5592,5 +5594,26 @@
     <string-array name="nationality">
         <item>Brasileiro</item>
         <item>Brasileira</item>
+    </string-array>
+
+    <string-array name="relationship">
+        <item>Solteiro(a)</item>
+        <item>Casado(a)</item>
+        <item>Separado(a)</item>
+        <item>Divorciado(a)</item>
+        <item>Viúvo(a)</item>
+    </string-array>
+
+    <string-array name="schooling">
+        <item>5º ANO ENS.FUNDAM.INCOMPLETO</item>
+        <item>5º ANO ENS.FUNDAM.COMPLETO</item>
+        <item>6º AO 9º ANO FUND.INCOMPLETO</item>
+        <item>ENSINO FUNDAMENTAL COMPLETO</item>
+        <item>ENSINO MÉDIO INCOMPLETO</item>
+        <item>ENSINO MÉDIO COMPLETO</item>
+        <item>SUPERIOR INCOMPLETO</item>
+        <item>SUPERIOR COMPLETO</item>
+        <item>MESTRADO</item>
+        <item>DOUTORADO</item>
     </string-array>
 </resources>

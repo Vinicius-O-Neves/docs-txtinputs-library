@@ -1,7 +1,6 @@
 package app.dealux.docs_txtinputs_library.customview
 
 import android.content.Context
-import android.content.res.Resources
 import android.text.Editable
 import android.text.TextWatcher
 import android.util.AttributeSet
@@ -92,9 +91,13 @@ class CPFItem @JvmOverloads constructor(
                         context,
                         R.color.blue
                     )
+                    binding.docInputLayout.startIconDrawable!!
+                        .setTint(ContextCompat.getColor(context, R.color.blue))
                     maskCPF()
                 }
             } else {
+                binding.docInputLayout.startIconDrawable!!
+                    .setTint(ContextCompat.getColor(context, R.color.black))
                 jobMask.cancel()
             }
         }
@@ -175,7 +178,7 @@ class CPFItem @JvmOverloads constructor(
         return numbers[9] == dv1 && numbers[10] == dv2
     }
 
-    fun verifyCpf(): Boolean {
+    fun verify(): Boolean {
         val cpf = unmask(binding.docInputEdittext.text.toString())
         if (!isCpfValid(cpf)) {
             binding.docInputLayout.let {

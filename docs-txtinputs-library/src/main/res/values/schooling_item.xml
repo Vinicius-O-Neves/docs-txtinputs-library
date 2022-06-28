@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SchoolingItem">
+        <attr name="schoolingCounterMinLength" format="integer" />
+        <attr name="schoolingHintText" format="string" />
+        <attr name="schoolingErrorText" format="string" />
+    </declare-styleable>
+</resources>

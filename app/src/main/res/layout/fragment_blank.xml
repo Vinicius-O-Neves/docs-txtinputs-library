@@ -68,7 +68,7 @@
             app:customInputMinLength="3"
             app:customInputMaxLength="30"
             app:customInputHintText="Nome"
-            app:customInputDrawableStart="@drawable/ic_calendar"
+            app:customInputDrawableStart="@drawable/ic_person"
             app:customInputErrorText="Digite um Nome válido"
             app:layout_constraintTop_toBottomOf="@id/ed_uf" />
 
@@ -83,6 +83,33 @@
 
             app:layout_constraintTop_toBottomOf="@id/ed_name"/>
 
+        <app.dealux.docs_txtinputs_library.customview.RelationshipItem
+            android:id="@+id/ed_relation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:relationCounterMinLength="6"
+
+            app:layout_constraintTop_toBottomOf="@id/ed_nationality" />
+
+        <app.dealux.docs_txtinputs_library.customview.SchoolingItem
+            android:id="@+id/ed_schooling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:schoolingCounterMinLength="6"
+            app:schoolingErrorText="Selecione um valor correto"
+
+            app:layout_constraintTop_toBottomOf="@id/ed_relation" />
+
+        <app.dealux.docs_txtinputs_library.customview.CNPJItem
+            android:id="@+id/ed_cnpj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cnpjCounterEnable="true"
+            app:cnpjErrorText="Digite um CNPJ Válido"
+            app:cnpjCounterMaxLength="18"
+
+            app:layout_constraintTop_toBottomOf="@id/ed_schooling" />
+
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn"
             android:layout_width="match_parent"
@@ -94,8 +121,8 @@
             android:text="click"
             android:textSize="26sp"
 
-            app:layout_constraintTop_toBottomOf="@id/ed_nationality"
-            app:layout_constraintBottom_toBottomOf="parent" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ed_cnpj"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

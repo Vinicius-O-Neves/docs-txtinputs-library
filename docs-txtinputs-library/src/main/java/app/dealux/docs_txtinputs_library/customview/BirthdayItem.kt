@@ -70,7 +70,7 @@ class BirthdayItem @JvmOverloads constructor(
         }
     }
 
-    fun verifyBirthDay(): Boolean {
+    fun verify(): Boolean {
         val birthday = binding.buttom.text.toString()
         val calendar = Calendar.getInstance()
         val year = calendar.get(Calendar.YEAR).toString()
