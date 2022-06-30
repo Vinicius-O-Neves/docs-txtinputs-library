@@ -36,6 +36,10 @@ class NationalityItem @JvmOverloads constructor(
 
     private var docCounterMinLength: Int = 5
 
+    fun text(): String {
+        return binding.nationalityInputEdittext.text.toString()
+    }
+
     init {
         setLayout(attrs)
         listener()

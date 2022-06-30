@@ -54,6 +54,10 @@ class CNPJItem @JvmOverloads constructor(
 
     private var docCounterMinLength: Int = defaultMinLength
 
+    fun text(): String {
+        return binding.cnpjInputEdittext.text.toString()
+    }
+
     init {
         setLayout(attrs)
         listener()
@@ -151,8 +155,14 @@ class CNPJItem @JvmOverloads constructor(
     private fun isCnpjValid(): Boolean {
         val cnpj = binding.cnpjInputEdittext.text.toString()
         val strCnpj = unmask(cnpj)
-        return validateCNPJVerificationDigit(true, strCnpj) && validateCNPJVerificationDigit(false,
-            strCnpj)
+
+        return if (strCnpj == "" || strCnpj == null) {
+            false
+        } else {
+            validateCNPJVerificationDigit(true, strCnpj) && validateCNPJVerificationDigit(
+                false,
+                strCnpj)
+        }
     }
 
     private fun validateCNPJVerificationDigit(firstDigit: Boolean, cnpj: String): Boolean {

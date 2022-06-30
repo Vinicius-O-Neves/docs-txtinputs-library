@@ -55,6 +55,10 @@ class CPFItem @JvmOverloads constructor(
 
     private var docCounterMinLength: Int = defaultMinLength
 
+    fun text(): String {
+        return binding.docInputEdittext.text.toString()
+    }
+
     init {
         setLayout(attrs)
         listener()
@@ -102,6 +106,7 @@ class CPFItem @JvmOverloads constructor(
             }
         }
     }
+
 
     // Function that take off the mask to check
     fun unmask(s: String): String {

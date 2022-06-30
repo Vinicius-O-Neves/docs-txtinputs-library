@@ -19,9 +19,16 @@ class BirthdayItem @JvmOverloads constructor(
 
     private val binding = BirthButtomLayoutBinding
         .inflate(LayoutInflater.from(context), this, true)
+
     var fragmentActivity: FragmentActivity? = null
+
     var docErrorText: String = getContext().getString(R.string.default_error_text)
+
     var isValid: Boolean = false
+
+    fun text(): String {
+        return binding.buttom.text.toString()
+    }
 
     init {
         setLayout(attrs)

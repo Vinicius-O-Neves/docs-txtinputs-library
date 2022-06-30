@@ -14,8 +14,8 @@ android {
         applicationId "app.dealux.docstextinputlibrary"
         minSdk 21
         targetSdk 31
-        versionCode 1
-        versionName "1.0.17"
+        versionCode 1018
+        versionName "1.0.18"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

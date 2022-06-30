@@ -39,6 +39,8 @@ class BlankFragment : Fragment(),
     }
 
     private fun verify() {
+        var text = binding.edCpf.text()
+
         binding.edCpf.verify()
         binding.edPis.verify()
         binding.btnBirth.verify()
