@@ -52,10 +52,6 @@ class PISItem @JvmOverloads constructor(
 
     private var docCounterMinLength: Int = defaultMinLength
 
-    fun text(): String {
-        return binding.pisInputEdittext.text.toString()
-    }
-
     init {
         setLayout(attrs)
         listener()
@@ -82,6 +78,14 @@ class PISItem @JvmOverloads constructor(
 
             attributes.recycle()
         }
+    }
+
+    fun text(): String {
+        return binding.pisInputEdittext.text.toString()
+    }
+
+    fun setText(text: String) {
+        binding.pisInputEdittext.setText(text)
     }
 
     private fun listener() {

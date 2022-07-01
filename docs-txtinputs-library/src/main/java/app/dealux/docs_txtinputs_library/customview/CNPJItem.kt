@@ -54,10 +54,6 @@ class CNPJItem @JvmOverloads constructor(
 
     private var docCounterMinLength: Int = defaultMinLength
 
-    fun text(): String {
-        return binding.cnpjInputEdittext.text.toString()
-    }
-
     init {
         setLayout(attrs)
         listener()
@@ -84,6 +80,14 @@ class CNPJItem @JvmOverloads constructor(
 
             attributes.recycle()
         }
+    }
+
+    fun text(): String {
+        return binding.cnpjInputEdittext.text.toString()
+    }
+
+    fun setText(text: String) {
+        binding.cnpjInputEdittext.setText(text)
     }
 
     private fun listener() {

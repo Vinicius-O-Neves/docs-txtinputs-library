@@ -26,10 +26,6 @@ class BirthdayItem @JvmOverloads constructor(
 
     var isValid: Boolean = false
 
-    fun text(): String {
-        return binding.buttom.text.toString()
-    }
-
     init {
         setLayout(attrs)
         listener()
@@ -50,6 +46,14 @@ class BirthdayItem @JvmOverloads constructor(
 
             attributes.recycle()
         }
+    }
+
+    fun text(): String {
+        return binding.buttom.text.toString()
+    }
+
+    fun setText(text: String) {
+        binding.buttom.text = text
     }
 
     private fun listener() {

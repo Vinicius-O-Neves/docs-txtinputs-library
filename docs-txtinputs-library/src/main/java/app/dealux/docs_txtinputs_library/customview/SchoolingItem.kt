@@ -38,13 +38,17 @@ class SchoolingItem @JvmOverloads constructor(
 
     private var docCounterMinLength: Int = defaultMinLength
 
+    init {
+        setLayout(attrs)
+        listener()
+    }
+
     fun text(): String {
         return binding.schoolingInputEdittext.text.toString()
     }
 
-    init {
-        setLayout(attrs)
-        listener()
+    fun setText(text: String) {
+        binding.schoolingInputEdittext.setText(text)
     }
 
     private fun setLayout(attrs: AttributeSet?) {

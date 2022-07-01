@@ -181,8 +181,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/app/dealux/docstextinputlibrary/BlankFragment.kt</url>
-          <line>41</line>
-          <option name="timeStamp" value="1" />
+          <line>43</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

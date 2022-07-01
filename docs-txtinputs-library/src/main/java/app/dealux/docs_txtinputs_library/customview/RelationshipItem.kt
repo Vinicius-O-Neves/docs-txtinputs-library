@@ -44,6 +44,10 @@ class RelationshipItem @JvmOverloads constructor(
         return binding.relationshipInputEdittext.text.toString()
     }
 
+    fun setText(text: String) {
+        binding.relationshipInputEdittext.setText(text)
+    }
+
     init {
         setLayout(attrs)
         listener()

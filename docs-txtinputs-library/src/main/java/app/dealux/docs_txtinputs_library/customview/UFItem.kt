@@ -8,6 +8,7 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
 import app.dealux.docs_txtinputs_library.R
 import app.dealux.docs_txtinputs_library.databinding.UfTextinputLayoutBinding
+import app.dealux.view_animations_library.shake
 import kotlin.properties.Delegates
 
 class UFItem @JvmOverloads constructor(
@@ -39,6 +40,10 @@ class UFItem @JvmOverloads constructor(
 
     fun text(): String {
         return binding.ufInputEdittext.text.toString()
+    }
+
+    fun setText(text: String) {
+        binding.ufInputEdittext.setText(text)
     }
 
     init {
@@ -95,7 +100,11 @@ class UFItem @JvmOverloads constructor(
             uf !in ufs ||
             uf.length < docCounterMinLength
         ) {
-            binding.ufInputEdittext.error = docErrorText
+            binding.docInputLayout.also {
+                it.isErrorEnabled = true
+                it.error = docErrorText
+                it.shake(it)
+            }
 
             return false
         }

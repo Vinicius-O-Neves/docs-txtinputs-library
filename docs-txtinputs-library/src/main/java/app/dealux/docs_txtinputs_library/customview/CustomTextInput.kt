@@ -71,10 +71,6 @@ class CustomTextInput @JvmOverloads constructor(
 
     private var docCounterMinLength: Int = defaultMinLength
 
-    fun text(): String {
-        return binding.docInputEdittext.text.toString()
-    }
-
     init {
         setLayout(attrs)
         listener()
@@ -108,6 +104,14 @@ class CustomTextInput @JvmOverloads constructor(
 
             attributes.recycle()
         }
+    }
+
+    fun text(): String {
+        return binding.docInputEdittext.text.toString()
+    }
+
+    fun setText(text: String) {
+        binding.docInputEdittext.setText(text)
     }
 
     private fun listener() {

@@ -54,7 +54,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.Vinicius-O-Neves'
                 artifactId = 'docs-txtinputs-library'
-                version = '1.0.18'
+                version = '1.0.19'
             }
         }
     }
