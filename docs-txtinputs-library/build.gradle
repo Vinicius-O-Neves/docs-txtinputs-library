@@ -39,8 +39,8 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.4.2'
     implementation 'com.google.android.material:material:1.6.1'
 
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0'
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1'
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.5.0'
 
     // View Animations
@@ -54,7 +54,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.Vinicius-O-Neves'
                 artifactId = 'docs-txtinputs-library'
-                version = '1.0.20'
+                version = '1.0.21'
             }
         }
     }
