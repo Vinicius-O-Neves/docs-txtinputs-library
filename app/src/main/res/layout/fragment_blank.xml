@@ -110,6 +110,14 @@
 
             app:layout_constraintTop_toBottomOf="@id/ed_schooling" />
 
+        <app.dealux.docs_txtinputs_library.customview.DispatchingAgencyItem
+            android:id="@+id/ed_dispatching_agency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:customErrorText="Selecione uma agência válida!"
+
+            app:layout_constraintTop_toBottomOf="@id/ed_cnpj"/>
+
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn"
             android:layout_width="match_parent"
@@ -122,7 +130,7 @@
             android:textSize="26sp"
 
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/ed_cnpj"/>
+            app:layout_constraintTop_toBottomOf="@id/ed_dispatching_agency"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

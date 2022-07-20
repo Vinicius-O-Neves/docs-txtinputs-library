@@ -49,6 +49,7 @@ class BlankFragment : Fragment(),
         binding.edNationality.verify()
         binding.edRelation.verify()
         binding.edSchooling.verify()
+        binding.edDispatchingAgency.verify()
 
         if (!binding.edCpf.isValid) {
             Toast.makeText(requireContext(), "Digite um CPF Válido", Toast.LENGTH_SHORT).show()

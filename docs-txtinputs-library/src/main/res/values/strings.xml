@@ -11,6 +11,7 @@
     <string name="schooling">Escolaridade</string>
     <string name="uf_input_layout_hint">Naturalidade (UF)</string>
     <string name="nationality_input_layout_hint">Nacionalidade</string>
+    <string name="dispatching_agency">Órgão Expedidor</string>
 
     <string-array name="ufs_values">
         <item>AC - ACRELÂNDIA</item>
@@ -5615,5 +5616,35 @@
         <item>SUPERIOR COMPLETO</item>
         <item>MESTRADO</item>
         <item>DOUTORADO</item>
+    </string-array>
+
+    <string-array name="dispatching_agency_values">
+        <item>SSP-AC</item>
+        <item>SSP/AL</item>
+        <item>SSP/AP</item>
+        <item>SSP/AM</item>
+        <item>SSP/BA</item>
+        <item>SSPDS/CE</item>
+        <item>SSP/DF</item>
+        <item>SESP/ES</item>
+        <item>SSP/GO</item>
+        <item>SSP/MA</item>
+        <item>SSP-MT</item>
+        <item>SSP/MS</item>
+        <item>SSP/MG</item>
+        <item>SSP/PA</item>
+        <item>SSP/PB</item>
+        <item>SSP/PR</item>
+        <item>SSP/PE</item>
+        <item>SSP/PI</item>
+        <item>SSP/RJ</item>
+        <item>SESED/RN</item>
+        <item>SSP/RS</item>
+        <item>SESDEC/RO</item>
+        <item>SESP/RR</item>
+        <item>SSP/SC</item>
+        <item>SSP/SP</item>
+        <item>SSP/SE</item>
+        <item>SSP/TO</item>
     </string-array>
 </resources>

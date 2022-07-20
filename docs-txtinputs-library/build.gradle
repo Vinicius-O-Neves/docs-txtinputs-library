@@ -41,7 +41,7 @@ dependencies {
 
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0'
-    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.4.1'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.5.0'
 
     // View Animations
     implementation 'com.github.Vinicius-O-Neves:view-animations:1.0.12'
@@ -54,7 +54,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.Vinicius-O-Neves'
                 artifactId = 'docs-txtinputs-library'
-                version = '1.0.19'
+                version = '1.0.20'
             }
         }
     }

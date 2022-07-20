@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DispatchingAgencyItem">
+        <attr name="customCounterMinLength" format="integer" />
+        <attr name="customHintText" format="string" />
+        <attr name="customErrorText" format="string" />
+    </declare-styleable>
+</resources>
