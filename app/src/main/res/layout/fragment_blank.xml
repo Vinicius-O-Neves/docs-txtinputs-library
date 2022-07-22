@@ -118,6 +118,20 @@
 
             app:layout_constraintTop_toBottomOf="@id/ed_cnpj"/>
 
+        <app.dealux.docs_txtinputs_library.customview.CityItem
+            android:id="@+id/ed_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintTop_toBottomOf="@id/ed_dispatching_agency" />
+
+        <app.dealux.docs_txtinputs_library.customview.StateItem
+            android:id="@+id/ed_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintTop_toBottomOf="@id/ed_city" />
+
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn"
             android:layout_width="match_parent"
@@ -130,7 +144,7 @@
             android:textSize="26sp"
 
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/ed_dispatching_agency"/>
+            app:layout_constraintTop_toBottomOf="@id/ed_state"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

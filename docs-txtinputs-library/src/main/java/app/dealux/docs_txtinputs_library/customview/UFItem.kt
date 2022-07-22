@@ -64,7 +64,6 @@ class UFItem @JvmOverloads constructor(
                 ?: context.getString(R.string.default_hint)
             docErrorText = attributes.getString(R.styleable.UFItem_ufErrorText)
                 ?: context.resources.getString(R.string.default_error_text)
-            isValid = false
 
             attributes.recycle()
         }

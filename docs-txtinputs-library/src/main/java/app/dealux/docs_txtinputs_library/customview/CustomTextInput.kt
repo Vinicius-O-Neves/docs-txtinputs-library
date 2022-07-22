@@ -32,6 +32,12 @@ class CustomTextInput @JvmOverloads constructor(
 
     var isValid: Boolean = false
 
+    private var docMaxLines: Int by Delegates.observable(
+        1
+    ) { _, old, new ->
+        if (old != new) binding.docInputEdittext.maxLines = new
+    }
+
     private var docCounterEnable: Boolean by Delegates.observable(
         false,
     ) { _, _, new ->
@@ -96,11 +102,11 @@ class CustomTextInput @JvmOverloads constructor(
             docErrorText =
                 attributes.getString(R.styleable.CustomTextInput_customInputErrorText)
                     ?: docErrorText
-            isValid = false
             docStartDrawable =
                 attributes.getDrawable(R.styleable.CustomTextInput_customInputDrawableStart)
             docMask =
                 attributes.getString(R.styleable.CustomTextInput_customInputMask)
+            docMaxLines = attributes.getInt(R.styleable.CustomTextInput_customMaxLines, 1)
 
             attributes.recycle()
         }

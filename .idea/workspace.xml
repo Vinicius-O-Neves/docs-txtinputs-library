@@ -32,8 +32,8 @@
         <option value="Kotlin Interface" />
         <option value="Kotlin File" />
         <option value="resourceFile" />
-        <option value="layoutResourceFile" />
         <option value="valueResourceFile" />
+        <option value="layoutResourceFile" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -53,6 +53,7 @@
     <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/CNPJItem.kt_SELECTED" value="CNPJItem" />
     <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/CPFItem.kt_CPFItem_DIMENSIONS" value="1080&#10;1920" />
     <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/CPFItem.kt_SELECTED" value="CPFItem" />
+    <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/CityItem.kt_SELECTED" value="CityItem" />
     <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/CustomInput.kt_SELECTED" value="CustomInput" />
     <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/CustomTextInput.kt_CustomTextInput_DIMENSIONS" value="1080&#10;1920" />
     <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/CustomTextInput.kt_SELECTED" value="CustomTextInput" />
@@ -61,6 +62,7 @@
     <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/PISItem.kt_SELECTED" value="PISItem" />
     <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/RelationshipItem.kt_SELECTED" value="RelationshipItem" />
     <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/SchoolingItem.kt_SELECTED" value="SchoolingItem" />
+    <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/StateItem.kt_SELECTED" value="StateItem" />
     <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/UFItem.kt_SELECTED" value="UFItem" />
     <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/birthdaytextinput/BirthdayItem.kt_SELECTED" value="BirthdayItem" />
     <property name="android-custom-viewC:/Users/Vinic/OneDrive/Desktop/Codes/docs-txtinputs-library-main/docs-txtinputs-library/src/main/java/app/dealux/docs_txtinputs_library/customview/cpftextinput/CPFItem.kt_SELECTED" value="CPFItem" />
@@ -82,8 +84,8 @@
       <recent name="C:\Users\Vinic\OneDrive\Desktop\Codes\docs-txtinputs-library-main\docs-txtinputs-library\src\main\res\drawable" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Vinic\OneDrive\Desktop\Codes\docs-txtinputs-library-main\docs-txtinputs-library\src\main\res\drawable" />
       <recent name="C:\Users\Vinic\OneDrive\Desktop\Codes\docs-txtinputs-library-main\docs-txtinputs-library\src\main\res\layout" />
+      <recent name="C:\Users\Vinic\OneDrive\Desktop\Codes\docs-txtinputs-library-main\docs-txtinputs-library\src\main\res\drawable" />
       <recent name="C:\Users\Vinicius Neves\Desktop\DocsTextInputLibrary\docs-txtinputs-library\src\main\res\layout" />
       <recent name="C:\Users\Vinicius Neves\Desktop\DocsTextInputLibrary\app\src\main\res\values" />
       <recent name="C:\Users\Vinicius Neves\Desktop\DocsTextInputLibrary\app\src\main\res\layout" />
