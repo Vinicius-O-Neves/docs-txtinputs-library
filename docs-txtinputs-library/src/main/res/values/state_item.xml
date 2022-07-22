@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StateItem">
+        <attr name="stateCounterMinLength" format="integer" />
+        <attr name="stateHintText" format="string" />
+        <attr name="stateErrorText" format="string" />
+    </declare-styleable>
+</resources>

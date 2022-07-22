@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CityItem">
+        <attr name="cityCounterMinLength" format="integer" />
+        <attr name="cityHintText" format="string" />
+        <attr name="cityErrorText" format="string" />
+    </declare-styleable>
+</resources>
