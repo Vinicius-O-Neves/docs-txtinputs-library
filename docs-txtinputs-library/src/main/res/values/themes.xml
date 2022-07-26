@@ -8,27 +8,40 @@
     </style>
 
     <style name="CustomComponents.TextInputLayout.OutlinedBox" parent="Widget.Material3.TextInputEditText.OutlinedBox">
-        <item name="hintTextColor">@color/black</item>
+        <item name="hintTextColor">@color/blue</item>
         <item name="boxStrokeColor">@color/black</item>
-        <item name="counterTextColor">@color/black</item>
+        <item name="counterTextColor">@color/white</item>
         <item name="boxStrokeErrorColor">@color/red</item>
         <item name="errorTextColor">@color/red</item>
         <item name="android:textColorHint">@color/gray</item>
     </style>
-
     <style name="ThemeOverlay.AppTheme.TextInputEditText.OutlinedBox" parent="">
         <item name="colorControlActivated">@color/cyan</item>
+        <item name="boxStrokeColor">@color/black</item>
     </style>
-
     <style name="App.helperTextTextAppearance" parent="TextAppearance.MaterialComponents.Caption">
         <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
     </style>
 
-    <style name="datePickerTheme" parent="android:Theme.Material.Light.Dialog">
-        <item name="android:colorAccent">#334355</item>
+    <style name="datePickerTheme" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.App.MediumComponent</item>
         <item name="android:textSize">24sp</item>
-        <item name="android:textColor">@color/black</item>
-        <item name="boxStrokeColor">@color/gray</item>
+        <!--Buttons Color-->
+        <item name="android:buttonBarButtonStyle">@style/MyButtonBarButtonStyle</item>
+        <!--Picker background-->
+        <item name="android:windowBackground">#DD182951</item>
+        <!--BackgroundColor and selected Day background-->
+        <item name="colorAccent">@color/cyan</item>
+        <item name="android:textColorPrimary">@color/white</item>
+    </style>
+    <style name="MyButtonBarButtonStyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="ShapeAppearance.App.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerSize">16dp</item>
     </style>
 
 </resources>
